@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arithmato</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Allerta Stencil"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/e3319616d1.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="calculate.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <div class="title">
+          <h2>ARITHMATO</h2>
+        </div>
+        <input type="text" placeholder="0" id="result" />
+        <button onclick="clr()" class="operate">C</button>
+        <button
+          onclick="bk()"
+          class="fas fa-backspace"
+          style="color: #00ffff"
+        ></button>
+        <button onclick="show('%')" class="operate">%</button>
+        <button onclick="show('/')" class="operate">/</button>
+        <button onclick="show('7')">7</button>
+        <button onclick="show('8')">8</button>
+        <button onclick="show('9')">9</button>
+        <button onclick="show('*')" class="operate">*</button>
+        <button onclick="show('4')">4</button>
+        <button onclick="show('5')">5</button>
+        <button onclick="show('6')">6</button>
+        <button onclick="show('-')" class="operate">-</button>
+        <button onclick="show('1')">1</button>
+        <button onclick="show('2')">2</button>
+        <button onclick="show('3')">3</button>
+        <button onclick="show('+')" class="operate">+</button>
+        <button onclick="show('0')">0</button>
+        <button onclick="show('.')">.</button>
+        <button
+          onclick="root()"
+          class="fa-solid fa-square-root-variable"
+          style="color: #00ffff"
+        ></button>
+        <button onclick="calculate()" class="equal">=</button>
+      </div>
+    </div>
+  </body>
+</html>
